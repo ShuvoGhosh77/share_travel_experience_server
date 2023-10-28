@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "H:\\project\\Hotel_booking\\hoteltonight_auth_service\\logs\\winston\\successes\\.e30fa5f937814f611dbc3a99ac156ea3229a6778-audit.json",
+    "files": [
+        {
+            "date": 1697649820268,
+            "name": "H:\\project\\Hotel_booking\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-18-10-23-success.log",
+            "hash": "7c2af3b79094564ba62f8a53b7b222f44e4fa26ac097b884d14f29fe1072fa74"
+        },
+        {
+            "date": 1698517424376,
+            "name": "H:\\project\\Hotel_booking\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-29-10-00-success.log",
+            "hash": "3d18e2088d9ee2df61a7c9b269ba1bcc18d082ed5511a7dbb27370d7a411e05a"
+        },
+        {
+            "date": 1698521781525,
+            "name": "H:\\project\\Hotel_booking\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-29-10-01-success.log",
+            "hash": "7a327ce78275cc63431a34db7792a852758ba5828e90c9c04d9fdf1f6f901f3e"
+        }
+    ],
+    "hashType": "sha256"
+}
