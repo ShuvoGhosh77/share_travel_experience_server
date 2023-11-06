@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\p\\Back End\\hoteltonight_auth_service\\logs\\winston\\successes\\.9f6e9cebf101b8e5a912d9597e3c67f0c4c11f43-audit.json",
+    "files": [
+        {
+            "date": 1699262971540,
+            "name": "F:\\p\\Back End\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-06-11-15-success.log",
+            "hash": "8a6b72564d5eb5eb2fbe1faccbb97aedb4de4dd8ef0b58efc642fede57b1a02e"
+        },
+        {
+            "date": 1699265651885,
+            "name": "F:\\p\\Back End\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-06-11-16-success.log",
+            "hash": "afa5c17c2f0e8cf49d9bcb4a3dc7f637b3586bece350fe20feeeb118c5da2788"
+        },
+        {
+            "date": 1699269683303,
+            "name": "F:\\p\\Back End\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-06-11-17-success.log",
+            "hash": "2b8783f78e1b98620b3818f0317e9b92400153b809d503012a1998db68f2afd2"
+        },
+        {
+            "date": 1699272023652,
+            "name": "F:\\p\\Back End\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-06-11-18-success.log",
+            "hash": "ce47ff565593f3885c425d6767cac36e0dceeae0e088e4e6f7e357ea2d4852fb"
+        }
+    ],
+    "hashType": "sha256"
+}

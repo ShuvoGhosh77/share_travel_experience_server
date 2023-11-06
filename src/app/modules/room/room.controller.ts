@@ -34,8 +34,45 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
   })
 })
 
+const getByIdFromDB = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await RoomService.getByIdFromDB(id);
+  sendResponse(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Room fetched successfully',
+      data: result
+  });
+});
+
+const updateOneInDB = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await RoomService.updateOneInDB(id, req.body);
+  sendResponse(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Room updated successfully',
+      data: result
+  });
+});
+
+const deleteByIdFromDB = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = await RoomService.deleteByIdFromDB(id);
+  sendResponse(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'AcademicDepartment delete successfully',
+      data: result
+  });
+});
+
+
 export const RoomController = {
   insertIntoDB,
-  getAllFromDB
+  getAllFromDB,
+  getByIdFromDB,
+  updateOneInDB,
+  deleteByIdFromDB
   
 };

@@ -13,13 +13,37 @@ datasource db {
 model Room {
   id            String   @id @default(uuid())
   RoomNumber    String   @unique
-  RoomType      String
+  RoomType      RoomTypes
   PricePerNight Int
   Description   String
   Capacity      String
   Facilities    String[]
+  Status        RoomStatus  @default(Available)
   createdAt     DateTime @default(now()) @map("created_at")
   updatedAt     DateTime @updatedAt @map("updated_at")
 
   @@map("rooms")
+}
+
+model Customer {
+  id            String   @id @default(uuid())
+  FullName      String   
+  Email         String   @unique 
+  Phone         String
+  Address       String
+  createdAt     DateTime @default(now()) @map("created_at")
+  updatedAt     DateTime @updatedAt @map("updated_at")
+
+  @@map("customer")
+}
+
+
+enum RoomTypes {
+  Single
+  Double
+  Duplex 
+}
+enum RoomStatus{
+  Available
+  Booked
 }
