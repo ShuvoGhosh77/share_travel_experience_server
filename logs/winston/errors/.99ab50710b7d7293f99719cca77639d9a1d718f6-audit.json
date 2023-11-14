@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\errors\\.99ab50710b7d7293f99719cca77639d9a1d718f6-audit.json",
+    "files": [
+        {
+            "date": 1699983977284,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\errors\\phu-2023-14-11-23-error.log",
+            "hash": "d355b796cc16c14560816c63981783d45554311a7a6a7b27018419241e466d31"
+        }
+    ],
+    "hashType": "sha256"
+}

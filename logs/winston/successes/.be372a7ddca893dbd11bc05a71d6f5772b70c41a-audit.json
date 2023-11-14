@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\.be372a7ddca893dbd11bc05a71d6f5772b70c41a-audit.json",
+    "files": [
+        {
+            "date": 1699983977276,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-14-11-23-success.log",
+            "hash": "89c81d9d49e2e10a2e55e3ecdb46962b53c19812f2abbafc255fcced9ea0aa15"
+        }
+    ],
+    "hashType": "sha256"
+}

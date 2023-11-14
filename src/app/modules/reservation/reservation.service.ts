@@ -17,15 +17,15 @@ const createReservation = async (
   reservation: Reservation,
 ): Promise<any> => {
 
-    // Get the selected room
-    const selectedRoom = await prisma.room.findUnique({
-      where: { id: reservation.RoomNumberID },
-    });
+    // // Get the selected room
+    // const selectedRoom = await prisma.room.findUnique({
+    //   where: { id: reservation.RoomNumberID },
+    // });
   
-    // Check if the room exists and is available
-    if (!selectedRoom || selectedRoom.Status !== "Available") {
-      throw new Error("Selected room is not available for reservation.");
-    }
+    // // Check if the room exists and is available
+    // if (!selectedRoom || selectedRoom.Status !== "Available") {
+    //   throw new Error("Selected room is not available for reservation.");
+    // }
   
     
 
