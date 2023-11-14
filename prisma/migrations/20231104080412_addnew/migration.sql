@@ -1,3 +1,6 @@
+-- CreateEnum
+CREATE TYPE "RoomStatus" AS ENUM ('Available', 'Booked');
+
 -- CreateTable
 CREATE TABLE "rooms" (
     "id" TEXT NOT NULL,
@@ -6,6 +9,7 @@ CREATE TABLE "rooms" (
     "PricePerNight" INTEGER NOT NULL,
     "Description" TEXT NOT NULL,
     "Capacity" TEXT NOT NULL,
+    "Status" "RoomStatus" NOT NULL DEFAULT 'Available',
     "Facilities" TEXT[],
     "created_at" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMP(3) NOT NULL,

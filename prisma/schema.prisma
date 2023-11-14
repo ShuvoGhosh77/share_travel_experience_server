@@ -11,15 +11,59 @@ datasource db {
 }
 
 model Room {
-  id            String   @id @default(uuid())
-  RoomNumber    String   @unique
-  RoomType      String
+  id            String         @id @default(uuid())
+  RoomNumber    String         @unique
+  RoomType      RoomTypeStatus
   PricePerNight Int
   Description   String
   Capacity      String
+  Status        RoomStatus     @default(Available)
   Facilities    String[]
-  createdAt     DateTime @default(now()) @map("created_at")
-  updatedAt     DateTime @updatedAt @map("updated_at")
+  createdAt     DateTime       @default(now()) @map("created_at")
+  updatedAt     DateTime       @updatedAt @map("updated_at")
+  reservations   Reservation[]
 
   @@map("rooms")
+}
+
+model Customer {
+  id           String        @id @default(uuid())
+  FullName     String
+  Email        String        @unique
+  Phone        String
+  Address      String
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+  reservations Reservation[]
+
+  @@map("customer")
+}
+
+model Reservation {
+  id             String   @id @default(uuid())
+  CheckInDate    String
+  CheckOutDate   String
+  Adults         Int
+  Children       Int
+  TotalCost      Int
+  TotalRoomNumber Int
+  CustomerID     String
+  customer       Customer @relation(fields: [CustomerID], references: [id])
+  RoomNumberID   String
+  RoomNumber     Room     @relation(fields: [RoomNumberID], references: [id])
+  createdAt      DateTime @default(now()) @map("created_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+
+  @@map("reservation")
+}
+
+enum RoomStatus {
+  Available
+  Booked
+}
+
+enum RoomTypeStatus {
+  Single
+  Double
+  Deluxe
 }
