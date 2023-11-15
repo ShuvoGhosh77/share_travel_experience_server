@@ -21,7 +21,7 @@ model Room {
   Facilities    String[]
   createdAt     DateTime       @default(now()) @map("created_at")
   updatedAt     DateTime       @updatedAt @map("updated_at")
-  reservations   Reservation[]
+  reservations  Reservation[]
 
   @@map("rooms")
 }
@@ -40,21 +40,47 @@ model Customer {
 }
 
 model Reservation {
-  id             String   @id @default(uuid())
-  CheckInDate    String
-  CheckOutDate   String
-  Adults         Int
-  Children       Int
-  TotalCost      Int
+  id              String   @id @default(uuid())
+  CheckInDate     String
+  CheckOutDate    String
+  Adults          Int
+  Children        Int
+  TotalCost       Int
   TotalRoomNumber Int
-  CustomerID     String
-  customer       Customer @relation(fields: [CustomerID], references: [id])
-  RoomNumberID   String
-  RoomNumber     Room     @relation(fields: [RoomNumberID], references: [id])
-  createdAt      DateTime @default(now()) @map("created_at")
-  updatedAt      DateTime @updatedAt @map("updated_at")
+  CustomerID      String
+  customer        Customer @relation(fields: [CustomerID], references: [id])
+  RoomNumberID    String
+  RoomNumber      Room     @relation(fields: [RoomNumberID], references: [id])
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
 
   @@map("reservation")
+}
+
+model Posts {
+  id              String @id @default(uuid())
+  PostTitle       String
+  PostDescription String
+  PostImage       String
+  PostDate        String
+  AuthorImage     String
+  AuthorName      String
+
+  Comment Comment[]
+
+  @@map("posts")
+}
+
+model Comment {
+  id         String  @id @default(uuid())
+  Name       String
+  Email      String
+  Comments   String
+  PostId     String
+  Post       Posts   @relation(fields: [PostId], references: [id])
+  adminReply String?
+
+  @@map("comment")
 }
 
 enum RoomStatus {

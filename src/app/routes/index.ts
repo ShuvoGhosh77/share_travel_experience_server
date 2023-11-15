@@ -2,6 +2,8 @@ import express from 'express';
 import { roomRoutes } from '../modules/room/room.routes';
 import { customerRoutes } from '../modules/customer/customer.routes';
 import { ReservationRoutes } from '../modules/reservation/reservation.routes';
+import { commentRoutes } from '../modules/comment/comment.routes';
+import { postRoutes } from '../modules/posts/post.route';
 
 
 
@@ -21,10 +23,18 @@ const moduleRoutes = [
     path: "/reservation",
     route: ReservationRoutes
   },
-{
+  {
     path: '/customer',
     route: customerRoutes
-},
+  },
+  {
+    path: '/comment',
+    route: commentRoutes
+  },
+  {
+    path: '/post',
+    route: postRoutes
+  },
 
 ];
 
