@@ -4,6 +4,8 @@ import { customerRoutes } from '../modules/customer/customer.routes';
 import { ReservationRoutes } from '../modules/reservation/reservation.routes';
 import { commentRoutes } from '../modules/comment/comment.routes';
 import { postRoutes } from '../modules/posts/post.route';
+import { userRoutes } from '../modules/user/user.route';
+import { authRoutes } from '../modules/auth/auth.route';
 
 
 
@@ -34,6 +36,14 @@ const moduleRoutes = [
   {
     path: '/post',
     route: postRoutes
+  },
+  {
+    path: '/user',
+    route: userRoutes
+  },
+  {
+    path: '/auth',
+    route: authRoutes
   },
 
 ];

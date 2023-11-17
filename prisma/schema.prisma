@@ -83,6 +83,14 @@ model Comment {
   @@map("comment")
 }
 
+model User{
+  id         String  @id @default(uuid())
+  Email      String        @unique
+  Role       String
+  password   String
+  
+  @@map("user")
+}
 enum RoomStatus {
   Available
   Booked
