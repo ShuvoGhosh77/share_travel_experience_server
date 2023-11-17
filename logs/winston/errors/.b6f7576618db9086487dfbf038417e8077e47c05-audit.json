@@ -59,6 +59,11 @@
             "date": 1700195213271,
             "name": "F:\\p\\Back End\\hoteltonight_auth_service\\logs\\winston\\errors\\phu-2023-17-11-10-error.log",
             "hash": "127b943ba046c489a4033c78543b09677ad017cf9aeb8b0f2ee681fd1ea9cca6"
+        },
+        {
+            "date": 1700197330196,
+            "name": "F:\\p\\Back End\\hoteltonight_auth_service\\logs\\winston\\errors\\phu-2023-17-11-11-error.log",
+            "hash": "671902f73941fed4bc90e08c6104879e189795714a4f94d702662b92c6120bf8"
         }
     ],
     "hashType": "sha256"
