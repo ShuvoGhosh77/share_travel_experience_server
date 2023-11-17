@@ -4,6 +4,8 @@ import { IPaginationOptions } from "../../../interfaces/pagination";
 import { paginationHelpers } from "../../../helpers/paginationHelper";
 import prisma from "../../../shared/prisma";
 
+import * as schedule from 'node-schedule';
+
 
 // const insertIntoDB = async (data: Reservation): Promise<Reservation> => {
 //   const result = await prisma.reservation.create({
@@ -30,6 +32,7 @@ const createReservation = async (
     
 
   const result = await prisma.$transaction(async transactionCLient => {
+
     const createCustomer = await transactionCLient.customer.create({
       data: customer,
     })
@@ -83,6 +86,30 @@ const getAllFromDB = async (
       data: result
   }
 }
+
+
+const job = schedule.scheduleJob('0 1 * * *', async () => {
+  try {
+    const currentDate = new Date().toISOString().split('T')[0];
+    
+
+    const overdueReservations = await prisma.reservation.findMany({
+      where: {
+        CheckOutDate: { lt: currentDate },
+      },
+    });
+    console.log(overdueReservations)
+    for (const reservation of overdueReservations) {
+      // Update room state to 'free'
+      await prisma.room.update({
+        where: { id: reservation.id },
+        data: { Status: 'Booked' },
+      });
+    }
+  } catch (error) {
+    console.error(error);
+  }
+});
 
 export const ReservationService = {
   getAllFromDB,

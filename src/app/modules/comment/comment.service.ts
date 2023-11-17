@@ -24,6 +24,7 @@ const insertIntoDB = async (data: Comment): Promise<Comment> => {
 };
 
 const getByIdFromDB = async (PostId: string): Promise<any[]> => {
+
   const result = await prisma.comment.findMany({
     where: {
       PostId,

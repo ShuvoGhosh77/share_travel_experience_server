@@ -64,6 +64,16 @@
             "date": 1700197330196,
             "name": "F:\\p\\Back End\\hoteltonight_auth_service\\logs\\winston\\errors\\phu-2023-17-11-11-error.log",
             "hash": "671902f73941fed4bc90e08c6104879e189795714a4f94d702662b92c6120bf8"
+        },
+        {
+            "date": 1700211215052,
+            "name": "F:\\p\\Back End\\hoteltonight_auth_service\\logs\\winston\\errors\\phu-2023-17-11-14-error.log",
+            "hash": "6e224a9762f2a6a82070670e23a182ac8bdfcd03bddf625fbdc0ecea3d0e3bce"
+        },
+        {
+            "date": 1700216392088,
+            "name": "F:\\p\\Back End\\hoteltonight_auth_service\\logs\\winston\\errors\\phu-2023-17-11-16-error.log",
+            "hash": "eb4ce7560c55bf3e6546b9f09a3e5c7eb4d8f787dc9549bc36cf8ec5e7b4bb4e"
         }
     ],
     "hashType": "sha256"
