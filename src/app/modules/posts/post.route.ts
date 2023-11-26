@@ -1,8 +1,8 @@
 import express from 'express';
 
-import validateRequest from '../../middlewares/validateRequest';
+
 import { PostController } from './post.controller';
-import auth from '../../middlewares/auth';
+
 
 
 

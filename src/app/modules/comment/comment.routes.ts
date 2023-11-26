@@ -1,6 +1,6 @@
 import express from 'express';
 
-import validateRequest from '../../middlewares/validateRequest';
+
 import { CommentController } from './comment.controller';
 import auth from '../../middlewares/auth';
 
