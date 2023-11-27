@@ -1,8 +1,8 @@
 import express, { NextFunction, Request, Response } from 'express';
 
-import validateRequest from '../../middlewares/validateRequest';
+
 import { PostController } from './post.controller';
-import auth from '../../middlewares/auth';
+
 import { FileUploadHelper } from '../../../helpers/FileUploadHelper';
 
 
