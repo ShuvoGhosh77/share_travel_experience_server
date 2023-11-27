@@ -7,13 +7,14 @@ import { PostService } from "./post.service";
 
 const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
 
-    const result = await PostService.insertIntoDB(req.body);
+    const result = await PostService.insertIntoDB(req);
     sendResponse(res, {
         statusCode: httpStatus.OK,
         success: true,
         message: 'Post  Create successfully',
         data: result
     });
+    
   });
 
 
