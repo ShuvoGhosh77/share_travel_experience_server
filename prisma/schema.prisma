@@ -12,13 +12,14 @@ datasource db {
 
 model Room {
   id            String         @id @default(uuid())
+  RoomImage     String
   RoomNumber    String         @unique
   RoomType      RoomTypeStatus
   PricePerNight Int
   Description   String
   Capacity      String
   Status        RoomStatus     @default(Available)
-  Facilities    String[]
+  Facilities    String
   createdAt     DateTime       @default(now()) @map("created_at")
   updatedAt     DateTime       @updatedAt @map("updated_at")
   reservations  Reservation[]
@@ -47,6 +48,7 @@ model Reservation {
   Children        Int
   TotalCost       Int
   TotalRoomNumber Int
+  TotalMember     Int
   CustomerID      String
   customer        Customer @relation(fields: [CustomerID], references: [id])
   RoomNumberID    String
@@ -58,13 +60,15 @@ model Reservation {
 }
 
 model Posts {
-  id              String @id @default(uuid())
+  id              String   @id @default(uuid())
   PostTitle       String
   PostDescription String
   PostImage       String
   PostDate        String
   AuthorImage     String
   AuthorName      String
+  createdAt       DateTime @default(now()) @map("created_at")
+  updatedAt       DateTime @updatedAt @map("updated_at")
 
   Comment Comment[]
 
@@ -83,14 +87,15 @@ model Comment {
   @@map("comment")
 }
 
-model User{
-  id         String  @id @default(uuid())
-  Email      String        @unique
-  Role       String
-  password   String
-  
+model User {
+  id       String @id @default(uuid())
+  Email    String @unique
+  Role     String
+  password String
+
   @@map("user")
 }
+
 enum RoomStatus {
   Available
   Booked
@@ -100,4 +105,6 @@ enum RoomTypeStatus {
   Single
   Double
   Deluxe
+  Honeymoon_Package
+  Family_Package
 }

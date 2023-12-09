@@ -19,15 +19,46 @@ const createReservation = async (
   reservation: Reservation
 ): Promise<any> => {
   // // Get the selected room
-  // const selectedRoom = await prisma.room.findUnique({
-  //   where: { id: reservation.RoomNumberID },
-  // });
+  const selectedRoom = await prisma.room.findUnique({
+    where: { id: reservation.RoomNumberID },
+  });
 
-  // // Check if the room exists and is available
-  // if (!selectedRoom || selectedRoom.Status !== "Available") {
-  //   throw new Error("Selected room is not available for reservation.");
-  // }
+  const overlappingReservation = await prisma.reservation.findFirst({
+    where: {
+      RoomNumberID: reservation.RoomNumberID,
+      AND: [
+        {
+          OR: [
+            {
+              CheckInDate: {
+                lte: reservation.CheckOutDate,
+              },
+              CheckOutDate: {
+                gte: reservation.CheckInDate,
+              },
+            },
+            {
+              CheckInDate: {
+                gte: reservation.CheckInDate,
+                lte: reservation.CheckOutDate,
+              },
+            },
+          ],
+        },
+      ],
+    },
+  });
 
+  if (overlappingReservation) {
+    throw new Error("Selected dates are not available for the specified room.");
+  }
+
+  const totalMember = reservation.TotalMember;
+  const roomCapacity = parseInt(selectedRoom.Capacity);
+
+  if (totalMember > roomCapacity) {
+    throw new Error("TotalMember greater than room Capacity");
+  }
   const result = await prisma.$transaction(async transactionCLient => {
     const createCustomer = await transactionCLient.customer.create({
       data: customer,
@@ -94,14 +125,14 @@ const getAllFromDB = async (
 //         CheckOutDate: { lt: currentDate },
 //       },
 //     });
-//     console.log(overdueReservations)
+    
 //     for (const reservation of overdueReservations) {
 //       // Update room state to 'free'
 //       await prisma.room.update({
 //         where: { id: reservation.RoomNumberID },
 //         data: { Status: 'Available' },
 //       });
-// console.log(reservation)
+
 //     }
 //   } catch (error) {
 //     console.error(error);

@@ -7,8 +7,7 @@ export type IUploadFile = {
     filename: string,
     path: string,
     size: number
-}
-
+};
 export type ICloudinaryResponse = {
     asset_id: string,
     public_id: string,

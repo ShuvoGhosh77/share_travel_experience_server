@@ -6,14 +6,114 @@
     "auditLog": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\.be372a7ddca893dbd11bc05a71d6f5772b70c41a-audit.json",
     "files": [
         {
-            "date": 1699983977276,
-            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-14-11-23-success.log",
-            "hash": "89c81d9d49e2e10a2e55e3ecdb46962b53c19812f2abbafc255fcced9ea0aa15"
-        },
-        {
             "date": 1701106074690,
             "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-27-11-23-success.log",
             "hash": "d74b06538cfb072dcf91276806a8b548aba0bf185fe6530b2bf82e4883a3567e"
+        },
+        {
+            "date": 1701611185329,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-03-12-19-success.log",
+            "hash": "268f5557b5a629ced63849bc0028ded3f7d2406d57507d3dfe5c6760d8b246a2"
+        },
+        {
+            "date": 1701612317642,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-03-12-20-success.log",
+            "hash": "a1ddf465f7c1e83d6f14e98f3799fe579d90ed2e41fc53fd745d8d932d432d36"
+        },
+        {
+            "date": 1701615795994,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-03-12-21-success.log",
+            "hash": "b0348ca3cd60d2a636b2440cf28bbf22ec297e017b4e274e8f4aae5f4052eb01"
+        },
+        {
+            "date": 1701619215309,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-03-12-22-success.log",
+            "hash": "285bd5b93cfb13298bad5166012c5f02b7db3dc3cfe9a3b1952281fa13c2f42e"
+        },
+        {
+            "date": 1701623790721,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-03-12-23-success.log",
+            "hash": "9c7cf881d5c2bf850ca53fc28ff8c69114d64134d088812e13a601ebd15bbd04"
+        },
+        {
+            "date": 1701627393260,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-04-12-00-success.log",
+            "hash": "a386d3471d5cdda251329707f45700aa25deca0e53cb71221cbad038b61dac05"
+        },
+        {
+            "date": 1701710127392,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-04-12-23-success.log",
+            "hash": "d0f357cd4d1b111610c43bcc73270262aa4198229fb527716a11dcdf2bc26142"
+        },
+        {
+            "date": 1701713074300,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-05-12-00-success.log",
+            "hash": "645297fd1411abe30c8cd6f1f8d26f68853aa9c4336c29778cdd480f636940c9"
+        },
+        {
+            "date": 1701716434421,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-05-12-01-success.log",
+            "hash": "7746fdd72432814e4fa731ba9fa5238ccadf455ab9ac323c1995f12c791cc2c6"
+        },
+        {
+            "date": 1701873665553,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-06-12-20-success.log",
+            "hash": "828c60ba446e4980b26a0f3e7e002cc4abe1087dea1a96404bfb7a9c66f446da"
+        },
+        {
+            "date": 1701875190282,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-06-12-21-success.log",
+            "hash": "6bc4b59f29b3dc8be03ff6e279975ac9312c98f2c3220ce2f97b8a51955b87ee"
+        },
+        {
+            "date": 1701879838149,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-06-12-22-success.log",
+            "hash": "fa5fd643a0536cf947527111da23946a460dc84567096016615d2180ecd00004"
+        },
+        {
+            "date": 1701959739578,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-07-12-20-success.log",
+            "hash": "a008e3411b5fd5e478edb95b70c0eba883dc70dd1c17f22ac0323c019361fe5a"
+        },
+        {
+            "date": 1701961634865,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-07-12-21-success.log",
+            "hash": "7376ea7ab9505d119fcdf77ea5dc20c8078483c28b49e19715e1f4a4592f31d9"
+        },
+        {
+            "date": 1702047914541,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-08-12-21-success.log",
+            "hash": "dafe6e9d704d6af507ae4e158d9c5f1358504053ebb8182d77f2b9935d1ad4ef"
+        },
+        {
+            "date": 1702053074466,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-08-12-22-success.log",
+            "hash": "4dccbcb906b447c19fae45accc5e04acbb2c79ca7f76f7e67ca50f8fb2c42c01"
+        },
+        {
+            "date": 1702056321980,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-08-12-23-success.log",
+            "hash": "68d213c0428a820f34f678131e61c5554e9ae1607838a88758e828d70980d55f"
+        },
+        {
+            "date": 1702059640940,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-09-12-00-success.log",
+            "hash": "45fd64cc8275c3cb3cd8acf22b72f498919aea8e2ad9aebc221390ad8364418f"
+        },
+        {
+            "date": 1702097652717,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-09-12-10-success.log",
+            "hash": "d5d2bd6db174cd715e938e7f4324201b4e28cbf7fed3495a9582ee11e3dbf4aa"
+        },
+        {
+            "date": 1702098032239,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-09-12-11-success.log",
+            "hash": "730204440b27095eb057edb32cf940be217b5d24e3b5f97c93d5c9f82d78edad"
+        },
+        {
+            "date": 1702101852017,
+            "name": "H:\\project\\Hotel_booking\\New folder\\hoteltonight_auth_service\\logs\\winston\\successes\\phu-2023-09-12-12-success.log",
+            "hash": "98720bf921f03b36d0bd14e84de01d2d5026f877aeea57dfd8012154d68a1de1"
         }
     ],
     "hashType": "sha256"

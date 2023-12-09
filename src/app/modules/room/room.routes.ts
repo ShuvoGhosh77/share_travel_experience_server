@@ -4,14 +4,13 @@ import validateRequest from '../../middlewares/validateRequest';
 import { RoomValidation } from './room.validations';
 
 
+
 const router = express.Router();
 
 router.get('/', RoomController.getAllFromDB);
 router.get('/:id', RoomController.getByIdFromDB);
-router.post(
-  '/create_room',RoomController.insertIntoDB,
-  validateRequest(RoomValidation.create)
-);
+
+router.post('/create_room',RoomController.insertIntoDB);
 router.patch(
   '/:id',RoomController.updateOneInDB,
   validateRequest(RoomValidation.update)
