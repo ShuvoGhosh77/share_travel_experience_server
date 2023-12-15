@@ -10,54 +10,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Room {
-  id            String         @id @default(uuid())
-  RoomImage     String
-  RoomNumber    String         @unique
-  RoomType      RoomTypeStatus
-  PricePerNight Int
-  Description   String
-  Capacity      String
-  Status        RoomStatus     @default(Available)
-  Facilities    String
-  createdAt     DateTime       @default(now()) @map("created_at")
-  updatedAt     DateTime       @updatedAt @map("updated_at")
-  reservations  Reservation[]
-
-  @@map("rooms")
-}
-
-model Customer {
-  id           String        @id @default(uuid())
-  FullName     String
-  Email        String        @unique
-  Phone        String
-  Address      String
-  createdAt    DateTime      @default(now()) @map("created_at")
-  updatedAt    DateTime      @updatedAt @map("updated_at")
-  reservations Reservation[]
-
-  @@map("customer")
-}
-
-model Reservation {
-  id              String   @id @default(uuid())
-  CheckInDate     String
-  CheckOutDate    String
-  Adults          Int
-  Children        Int
-  TotalCost       Int
-  TotalRoomNumber Int
-  TotalMember     Int
-  CustomerID      String
-  customer        Customer @relation(fields: [CustomerID], references: [id])
-  RoomNumberID    String
-  RoomNumber      Room     @relation(fields: [RoomNumberID], references: [id])
-  createdAt       DateTime @default(now()) @map("created_at")
-  updatedAt       DateTime @updatedAt @map("updated_at")
-
-  @@map("reservation")
-}
 
 model Posts {
   id              String   @id @default(uuid())
@@ -82,7 +34,6 @@ model Comment {
   Comments   String
   PostId     String
   Post       Posts   @relation(fields: [PostId], references: [id])
-  adminReply String?
 
   @@map("comment")
 }
@@ -96,12 +47,9 @@ model User {
   @@map("user")
 }
 
-enum RoomStatus {
-  Available
-  Booked
-}
 
-enum RoomTypeStatus {
+
+enum PostCatagory {
   Single
   Double
   Deluxe

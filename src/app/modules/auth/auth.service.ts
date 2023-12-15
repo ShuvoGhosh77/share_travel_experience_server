@@ -8,6 +8,8 @@ import { Secret } from "jsonwebtoken";
 import config from "../../../config";
 import { hashPassword } from "../../../shared/bcryptUtils";
 
+
+
 const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   const { Email, password } = payload;
   const isUserExist = await prisma.user.findUnique({

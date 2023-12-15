@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\p\\Travel Blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\.705d91d1fcca3be2e9d713a90d6059ee65b44a4d-audit.json",
+    "files": [
+        {
+            "date": 1702625176073,
+            "name": "F:\\p\\Travel Blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-15-12-13-success.log",
+            "hash": "9c0d7a93853375ef2932f6294ea8137c909de43efe1a7f332249bedc0640c5cb"
+        }
+    ],
+    "hashType": "sha256"
+}
