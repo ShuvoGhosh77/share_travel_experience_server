@@ -16,21 +16,10 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
         data: result
     });
   });
-const repliesComment = catchAsync(async (req: Request, res: Response) => {
-  const { id } = req.params;
-  const { adminReply } = req.body;
-    const result = await CommentService.repliesComment(id,adminReply);
-    sendResponse(res, {
-        statusCode: httpStatus.OK,
-        success: true,
-        message: 'Add Comment successfully',
-        data: result
-    });
-  });
-  
+
   const getByIdFromDB = catchAsync(async (req: Request, res: Response) => {
-    const { id } = req.params;
-    const result = await CommentService.getByIdFromDB(id);
+    const { PostId } = req.params;
+    const result = await CommentService.getByIdFromDB(PostId);
     sendResponse(res, {
         statusCode: httpStatus.OK,
         success: true,
@@ -41,6 +30,6 @@ const repliesComment = catchAsync(async (req: Request, res: Response) => {
 
   export const CommentController = {
     insertIntoDB,
-    repliesComment,
+ 
     getByIdFromDB
   };

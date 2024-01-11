@@ -3,7 +3,7 @@ import multer from 'multer';
 
 import * as fs from 'fs';
 import { ICloudinaryResponse, IUploadFile } from '../interfaces/file';
-         
+             
 cloudinary.config({ 
   cloud_name: 'dglo5ojiy', 
   api_key: '859357754175584', 

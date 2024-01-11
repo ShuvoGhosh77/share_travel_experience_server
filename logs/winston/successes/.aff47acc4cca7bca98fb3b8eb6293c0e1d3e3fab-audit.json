@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\Travel_Blog_Auth_service\\logs\\winston\\successes\\.aff47acc4cca7bca98fb3b8eb6293c0e1d3e3fab-audit.json",
+    "files": [
+        {
+            "date": 1704689258051,
+            "name": "F:\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-08-01-10-success.log",
+            "hash": "102ee3d377376afdee0568cdc0bbcaf7f123a6d5be09ae893ecdb4c26772fae9"
+        },
+        {
+            "date": 1704690088618,
+            "name": "F:\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-08-01-11-success.log",
+            "hash": "973d1a8a4b4fa697f16115ed72c02f5a44b1f6174c0cd366d23801a80c82ce1c"
+        }
+    ],
+    "hashType": "sha256"
+}

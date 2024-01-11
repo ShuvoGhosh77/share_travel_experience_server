@@ -127,10 +127,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@prisma/client@^5.7.0":
-  version "5.7.0"
-  resolved "https://registry.npmjs.org/@prisma/client/-/client-5.7.0.tgz"
-  integrity sha512-cZmglCrfNbYpzUtz7HscVHl38e9CrUs31nrVoGUK1nIPXGgt8hT4jj2s657UXcNdQ/jBUxDgGmHyu2Nyrq1txg==
+"@prisma/client@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.npmjs.org/@prisma/client/-/client-5.8.0.tgz"
+  integrity sha512-QxO6C4MaA/ysTIbC+EcAH1aX/YkpymhXtO6zPdk+FvA7+59tNibIYpd+7koPdViLg2iKES4ojsxWNUGNJaEcbA==
 
 "@prisma/engines@5.5.2":
   version "5.5.2"
@@ -693,10 +693,10 @@ cloudinary-core@^2.13.0:
   resolved "https://registry.npmjs.org/cloudinary-core/-/cloudinary-core-2.13.0.tgz"
   integrity sha512-Nt0Q5I2FtenmJghtC4YZ3MZZbGg1wLm84SsxcuVwZ83OyJqG9CNIGp86CiI6iDv3QobaqBUpOT7vg+HqY5HxEA==
 
-cloudinary@^1.41.0:
-  version "1.41.0"
-  resolved "https://registry.npmjs.org/cloudinary/-/cloudinary-1.41.0.tgz"
-  integrity sha512-qFf2McjvILJITePf4VF1PrY/8c2zy+/q5FVV6V3VWrP/gpIZsusPqXL4QZ6ZKXibPRukzMYqsQEhaSQgJHKKow==
+cloudinary@^1.41.1:
+  version "1.41.1"
+  resolved "https://registry.npmjs.org/cloudinary/-/cloudinary-1.41.1.tgz"
+  integrity sha512-EBNEmhSNtES8d9dAd1tg9mKJk2jB5LvRxDcgNk7JiMDWNeHkSpwroJwnHZN4XdxKvjLnj9a9pbOgdPW90GkG1g==
   dependencies:
     cloudinary-core "^2.13.0"
     core-js "^3.30.1"

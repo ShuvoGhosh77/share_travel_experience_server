@@ -1,0 +1,155 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\.95c7de9e0a459fbed734ae15703bf143fdebf3e5-audit.json",
+    "files": [
+        {
+            "date": 1703860300020,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-29-12-20-success.log",
+            "hash": "f98b1cf950c40c7e43a3ec5d4f15cb72c8b94d9771ee67c89f8380108bd22b70"
+        },
+        {
+            "date": 1703865112358,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-29-12-21-success.log",
+            "hash": "1ee8246b58e750333033245343809078e4ccd502be44dcf2b530c6881bdffbd8"
+        },
+        {
+            "date": 1703875827756,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-30-12-00-success.log",
+            "hash": "203e0e087e667cd7ae69d10612212825934edb83652528ea64fdd77186adc4d7"
+        },
+        {
+            "date": 1703877524769,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-30-12-01-success.log",
+            "hash": "05ed9c5cdd7e792b458a1440ec93d2a114986b04a0c1927f78625d2a5a101138"
+        },
+        {
+            "date": 1703916741876,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-30-12-12-success.log",
+            "hash": "a498e1c4a6a84d94aad946a70056b5da0ee550675d87e77e03e000c4ac7a3e67"
+        },
+        {
+            "date": 1703952471856,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-30-12-22-success.log",
+            "hash": "a562b4940cf9a1bff3e47b01842a738de8f40fcd2013c5c9ab4326d0385cb675"
+        },
+        {
+            "date": 1703956885943,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-30-12-23-success.log",
+            "hash": "8202885f5da29d9aa4391579b0fb589f94741eacb2b9d32d093a49fd0de737c9"
+        },
+        {
+            "date": 1703963205413,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-31-12-01-success.log",
+            "hash": "cc731d3adb641d0492064464a268b4886c77010583cf6173b967121ccbbdd0de"
+        },
+        {
+            "date": 1703996474990,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-31-12-10-success.log",
+            "hash": "9e3b8cd023874714d7ab3b2d19c8429acb87bce3d0c5d9260f908a1ef03104f8"
+        },
+        {
+            "date": 1704000667875,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2023-31-12-11-success.log",
+            "hash": "f027e6209f0ce21985ef871c54193b628fc402bc4c2fa273d8f44228d9517982"
+        },
+        {
+            "date": 1704301543274,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-03-01-23-success.log",
+            "hash": "ecc1877001545d304c6df32d6d307863041dbe2e56c745ecc620ca97752f1d06"
+        },
+        {
+            "date": 1704382196845,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-04-01-21-success.log",
+            "hash": "3e0c455ab5eaac99558eea576bbfb72be9f2d8574eb45d8f8908f4f3bfd1e403"
+        },
+        {
+            "date": 1704568785144,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-07-01-01-success.log",
+            "hash": "1399c59d747de68a3bb03dee5b6dd8d444bc898fd0ba1460512bd8f2401208c2"
+        },
+        {
+            "date": 1704571601201,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-07-01-02-success.log",
+            "hash": "29ef627f7692044ad504a20d744360cb84cf9e472ac4f0698008648a9022c2d8"
+        },
+        {
+            "date": 1704577350746,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-07-01-03-success.log",
+            "hash": "f8f63ee001289160adeb7842c67116db0c89b0874df6e2389b2619c3bdc8abaa"
+        },
+        {
+            "date": 1704625406891,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-07-01-17-success.log",
+            "hash": "372115913e64590175f5f2077262b78eb5aa7e91eafbdbef8f73e4b19840fceb"
+        },
+        {
+            "date": 1704652393301,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-08-01-00-success.log",
+            "hash": "5c897072e677377a5294b7560d99f913e9e54687cfb6c9747ec56a300180a641"
+        },
+        {
+            "date": 1704654093201,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-08-01-01-success.log",
+            "hash": "57396cc72e3ee00dcae873977cd1d6c5a3b5f8adafd9f62eb88a1e9908efcf81"
+        },
+        {
+            "date": 1704726870800,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-08-01-21-success.log",
+            "hash": "4dba6af91ce6365c792e8c721e17426171132caf6059d5bb0ebae5e47d905839"
+        },
+        {
+            "date": 1704730612911,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-08-01-22-success.log",
+            "hash": "b0d33d404a955ce36e297e141261c9412f4678bb199dc906518d2819b4f76700"
+        },
+        {
+            "date": 1704733274755,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-08-01-23-success.log",
+            "hash": "71d60d4f940307deef2fca6e0fe738a2c63a633b418ad52bd64ea9272f8a4bed"
+        },
+        {
+            "date": 1704737389397,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-09-01-00-success.log",
+            "hash": "eacdfe4f969b1939e46c212de0d7ab7293595ba091e29543b580d1f75e7b7e7a"
+        },
+        {
+            "date": 1704807403317,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-09-01-19-success.log",
+            "hash": "08b2859ec604bc3da17f73df440647476af8fd617add26de5fc1c960f5db4997"
+        },
+        {
+            "date": 1704809404957,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-09-01-20-success.log",
+            "hash": "ccc5bb37b7592c1ae79e1c0b48de5c5c271c2ae0fa88c22075973e82d26e9d75"
+        },
+        {
+            "date": 1704823508312,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-10-01-00-success.log",
+            "hash": "66bca53b79ba86c04dc88ff9423493fd47dd569974123ebb9be0c3b4ddb0576c"
+        },
+        {
+            "date": 1704898094899,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-10-01-20-success.log",
+            "hash": "01f932a44e4e5f6d833e2c936d076c3530341c365f0d715e80560190111a8181"
+        },
+        {
+            "date": 1704900531129,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-10-01-21-success.log",
+            "hash": "75262cb4c04295736130c1fd1d034ae6487b96962a7a325a172cec3cee49845c"
+        },
+        {
+            "date": 1704910030464,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-11-01-00-success.log",
+            "hash": "7972ffbd9c71599ef3e23ba171e63e6ca428a0dea0d76526b787773b75b3968b"
+        },
+        {
+            "date": 1704982828023,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\successes\\phu-2024-11-01-20-success.log",
+            "hash": "8b90c87e2970fb543953a9b3f3af34382c8b8c473f802fbd94e2eb422fd9581f"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -47,7 +47,7 @@ const updateOneInDB = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Room updated successfully',
+    message: 'Post updated successfully',
     data: result,
   });
 });

@@ -10,17 +10,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model Posts {
-  id              String   @id @default(uuid())
+  id              String       @id @default(uuid())
   PostTitle       String
+  PostCategory    PostCatagory
   PostDescription String
   PostImage       String
   PostDate        String
-  AuthorImage     String
   AuthorName      String
-  createdAt       DateTime @default(now()) @map("created_at")
-  updatedAt       DateTime @updatedAt @map("updated_at")
+  Status          PostStatus   @default(Panding)
+  createdAt       DateTime     @default(now()) @map("created_at")
+  updatedAt       DateTime     @updatedAt @map("updated_at")
 
   Comment Comment[]
 
@@ -28,31 +28,137 @@ model Posts {
 }
 
 model Comment {
-  id         String  @id @default(uuid())
-  Name       String
-  Email      String
-  Comments   String
-  PostId     String
-  Post       Posts   @relation(fields: [PostId], references: [id])
+  id        String   @id @default(uuid())
+  Name      String
+  Email     String
+  Comments  String
+  PostId    String
+  Post      Posts    @relation(fields: [PostId], references: [id])
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("comment")
 }
 
 model User {
-  id       String @id @default(uuid())
-  Email    String @unique
-  Role     String
-  password String
+  id        String   @id @default(uuid())
+  Email     String   @unique
+  Role      String
+  password  String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
 
   @@map("user")
 }
 
+model Guide {
+  id           String      @id @default(uuid())
+  Name         String
+  GuideImage   String
+  PricePerDay  Int
+  CoverageArea String
+  Status       GuideStatus @default(Available)
+  createdAt    DateTime    @default(now()) @map("created_at")
+  updatedAt    DateTime    @updatedAt @map("updated_at")
 
+  reservations Reservation[]
+
+  @@map("guide")
+}
+
+model Product {
+  id                 String   @id @default(uuid())
+  ProductName        String
+  GuideImage         String
+  ProductDescription String
+  Price              Int
+  quantity           Int?     @default(1)
+  createdAt          DateTime @default(now()) @map("created_at")
+  updatedAt          DateTime @updatedAt @map("updated_at")
+
+  orderId Int?
+
+  @@map("product")
+}
+
+model Customer {
+  id           String        @id @default(uuid())
+  FullName     String
+  Email        String
+  Phone        String
+  Address      String
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+  reservations Reservation[]
+
+  @@map("customer")
+}
+
+model Reservation {
+  id           String        @id @default(uuid())
+  CheckInDate  String
+  CheckOutDate String
+  TotalCost    Int
+  Payment      PaymentStatus @default(Pending)
+  CustomerID   String
+  customer     Customer      @relation(fields: [CustomerID], references: [id])
+  GuideID      String
+  guide        Guide         @relation(fields: [GuideID], references: [id])
+  createdAt    DateTime      @default(now()) @map("created_at")
+  updatedAt    DateTime      @updatedAt @map("updated_at")
+
+  @@map("reservation")
+}
+
+model OrderItem {
+  id       Int    @id @default(autoincrement())
+  product  String
+  quantity Int
+  price    Float
+  order    Order  @relation(fields: [orderId], references: [id])
+  orderId  Int
+
+   @@map("orderItem")
+}
+
+// Order model
+model Order {
+  id              Int  @id @default(autoincrement())
+  orderItems      OrderItem[]
+  name            String
+  phone           String
+  shippingAddress String
+  email           String
+  paymentMethod   String
+  subtotal        Float
+  deliveryCharge  Int
+  totalPrice      Float
+  createdAt       DateTime    @default(now()) @map("created_at")
+  updatedAt       DateTime    @updatedAt @map("updated_at")
+
+   @@map("order")
+}
 
 enum PostCatagory {
-  Single
-  Double
-  Deluxe
-  Honeymoon_Package
-  Family_Package
+  Forest
+  River
+  Sea_beach
+  Mountain
+  Other
+}
+
+enum PostStatus {
+  Panding
+  Rejected
+  Success
+}
+
+enum PaymentStatus {
+  Pending
+  Complete
+}
+
+enum GuideStatus {
+  Available
+  Booked
 }
