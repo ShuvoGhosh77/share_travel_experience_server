@@ -13,6 +13,7 @@ datasource db {
 model Posts {
   id              String       @id @default(uuid())
   PostTitle       String
+  TravelLocation  String
   PostCategory    PostCatagory
   PostDescription String
   PostImage       String

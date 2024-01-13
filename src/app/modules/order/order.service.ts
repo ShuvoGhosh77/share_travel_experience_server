@@ -79,6 +79,9 @@ const getAllFromDB = async (
     andConditons.length > 0 ? { AND: andConditons } : {};
 
   const result = await prisma.order.findMany({
+    include: {
+      orderItems:true
+    },
     where: whereConditons,
     skip,
     take: limit,
@@ -104,7 +107,7 @@ const getAllFromDB = async (
   };
 };
 
-const deleteByIdFromDB = async (id:any): Promise<Order> => {
+const deleteByIdFromDB = async (id:number): Promise<Order> => {
   // Delete associated orderItem first
   await prisma.orderItem.deleteMany({
     where: {

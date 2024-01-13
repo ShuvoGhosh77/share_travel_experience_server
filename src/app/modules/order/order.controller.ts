@@ -47,7 +47,8 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
 
 const deleteByIdFromDB = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
-  const result = await OrderService.deleteByIdFromDB(id);
+  const getid = parseInt(id, 10);
+  const result = await OrderService.deleteByIdFromDB(getid);
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
