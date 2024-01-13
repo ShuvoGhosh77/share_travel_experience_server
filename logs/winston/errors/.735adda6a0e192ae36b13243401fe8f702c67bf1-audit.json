@@ -6,26 +6,6 @@
     "auditLog": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\errors\\.735adda6a0e192ae36b13243401fe8f702c67bf1-audit.json",
     "files": [
         {
-            "date": 1703860300029,
-            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\errors\\phu-2023-29-12-20-error.log",
-            "hash": "c380dc01d590a3b14e2b96259497f9fb96f66507d80208c727a7e4d72ce4f9a8"
-        },
-        {
-            "date": 1703865112369,
-            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\errors\\phu-2023-29-12-21-error.log",
-            "hash": "50a38187b0b9c806a2e315876ad20b5c404fe34c49499069f3ccdf0c15a89b2d"
-        },
-        {
-            "date": 1703875827822,
-            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\errors\\phu-2023-30-12-00-error.log",
-            "hash": "e37b4c8058b27e6e1b6e63b38cfd7e3351a4f294dad63c79ef2ee9c3d70994bf"
-        },
-        {
-            "date": 1703877524840,
-            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\errors\\phu-2023-30-12-01-error.log",
-            "hash": "e4d70e201583971b5ac2a9a192e31f875e3d553df866193394a26132e58028a5"
-        },
-        {
             "date": 1703916741930,
             "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\errors\\phu-2023-30-12-12-error.log",
             "hash": "0c37754d40f305f8e7e9f5e83378d90e5c1ec9540d92d177d70d5b7cab84b6c4"
@@ -149,6 +129,21 @@
             "date": 1704982828040,
             "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\errors\\phu-2024-11-01-20-error.log",
             "hash": "97da92b395ed7386f09016046e71c973210d8d6ecbb64d05c9f3d3c0cfa0281b"
+        },
+        {
+            "date": 1705072104021,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\errors\\phu-2024-12-01-21-error.log",
+            "hash": "dfbb3e3bddedc148cb1ae2797c1dbc94e1da97f610debf9d743961cb1dc7eaa5"
+        },
+        {
+            "date": 1705119183270,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\errors\\phu-2024-13-01-10-error.log",
+            "hash": "141e22fa44f1e57bd28a2e190781fc94e0e9d10e3910ad44e49d48578f5cb6d8"
+        },
+        {
+            "date": 1705122052921,
+            "name": "H:\\project\\Travel_blog\\Travel_Blog_Auth_service\\logs\\winston\\errors\\phu-2024-13-01-11-error.log",
+            "hash": "6df088d8fad9c043f872470c46ac0bb46182c45fdb2dc58ad3bc2072206ccb5a"
         }
     ],
     "hashType": "sha256"
