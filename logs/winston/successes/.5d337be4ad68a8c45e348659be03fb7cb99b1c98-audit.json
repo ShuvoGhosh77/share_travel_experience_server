@@ -24,6 +24,11 @@
             "date": 1706005553727,
             "name": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\successes\\phu-2024-23-01-16-success.log",
             "hash": "200202c05a32b788d131af39010e73d7d1086b9df5903e137db2ffd701297895"
+        },
+        {
+            "date": 1706009458009,
+            "name": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\successes\\phu-2024-23-01-17-success.log",
+            "hash": "961e1f9922504535a0aaea385f6c9c889a4c2d7a0ae5b0e1950f2ded98d09cd0"
         }
     ],
     "hashType": "sha256"

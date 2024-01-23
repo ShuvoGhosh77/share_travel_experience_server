@@ -1,3 +1,3 @@
-export const OrderSearchAbleFields = ['ProductName'];
+export const OrderSearchAbleFields = ['name','email'];
 
-export const OrderFilterAbleFileds = ['searchTerm', 'ProductName'];
+export const OrderFilterAbleFileds = ['searchTerm', 'name','email'];
