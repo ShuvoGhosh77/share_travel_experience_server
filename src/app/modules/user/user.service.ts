@@ -11,7 +11,21 @@ const insertIntoDB = async (data: User): Promise<User> => {
     const result = await prisma.user.create({
         data:{
             ...data,
-            password:hashedPassword
+            password:hashedPassword,
+        },
+    });
+    return result;
+  };
+const createUser = async (data: User): Promise<User> => {
+    const hashedPassword = await hashPassword(data.password);
+
+    data.Role = 'User';
+  
+    const result = await prisma.user.create({
+        data:{
+            ...data,
+            password:hashedPassword,
+         
         },
     });
     return result;
@@ -19,4 +33,5 @@ const insertIntoDB = async (data: User): Promise<User> => {
 
   export const UserService = {
     insertIntoDB,
+    createUser
   };

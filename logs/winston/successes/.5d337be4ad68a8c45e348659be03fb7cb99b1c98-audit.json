@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\successes\\.5d337be4ad68a8c45e348659be03fb7cb99b1c98-audit.json",
+    "files": [
+        {
+            "date": 1705984883554,
+            "name": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\successes\\phu-2024-23-01-10-success.log",
+            "hash": "2fb41efc147c805dae4cb8ec39a41ec319b63eed3b8a025bb1494aad7fccef7c"
+        },
+        {
+            "date": 1705986824966,
+            "name": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\successes\\phu-2024-23-01-11-success.log",
+            "hash": "0f494623243c5d2da917598132b6a1fa250b62a1a6e4e75569a21bd12f129567"
+        }
+    ],
+    "hashType": "sha256"
+}

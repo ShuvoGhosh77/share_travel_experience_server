@@ -11,6 +11,15 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
     sendResponse(res, {
         statusCode: httpStatus.OK,
         success: true,
+        message: 'Admin created successfully',
+        data: result
+    });
+  });
+const createUser = catchAsync(async (req: Request, res: Response) => {
+    const result = await UserService.createUser(req.body);
+    sendResponse(res, {
+        statusCode: httpStatus.OK,
+        success: true,
         message: 'User created successfully',
         data: result
     });
@@ -20,4 +29,5 @@ const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
 
   export const UserController = {
     insertIntoDB,
+    createUser
   };
