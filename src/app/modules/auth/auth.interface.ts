@@ -3,6 +3,8 @@
 export type ILoginUser = {
   Email: string;
   password: string;
+  FullName:string;
+  Number:string
 };
 
 export type ILoginUserResponse = {
