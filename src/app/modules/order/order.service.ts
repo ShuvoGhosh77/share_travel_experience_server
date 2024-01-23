@@ -107,6 +107,20 @@ const getAllFromDB = async (
   };
 };
 
+const updateOneInDB = async (
+  id: number,
+  payload: Partial<Order>
+): Promise<Order> => {
+  const result = await prisma.order.update({
+    where: {
+      id,
+    },
+    data: payload,
+  });
+
+  return result;
+};
+
 const deleteByIdFromDB = async (id:number): Promise<Order> => {
   // Delete associated orderItem first
   await prisma.orderItem.deleteMany({
@@ -128,5 +142,6 @@ const deleteByIdFromDB = async (id:number): Promise<Order> => {
 export const OrderService = {
   insertIntoDB,
   getAllFromDB,
+  updateOneInDB,
   deleteByIdFromDB,
 };

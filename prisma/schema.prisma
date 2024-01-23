@@ -136,6 +136,7 @@ model Order {
   subtotal        Float
   deliveryCharge  Int
   totalPrice      Float
+  OrderStatus     orderStatus @default(Pending)
   createdAt       DateTime    @default(now()) @map("created_at")
   updatedAt       DateTime    @updatedAt @map("updated_at")
 
@@ -158,6 +159,11 @@ enum PostStatus {
 
 enum PaymentStatus {
   Pending
+  Complete
+}
+enum orderStatus {
+  Pending
+  On_The_Way
   Complete
 }
 

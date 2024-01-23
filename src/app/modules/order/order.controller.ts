@@ -45,6 +45,17 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
   })
 })
 
+const updateOneInDB = catchAsync(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const orderid = parseInt(id, 10);
+  const result = await OrderService.updateOneInDB(orderid, req.body);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Order Status updated successfully',
+    data: result,
+  });
+});
 const deleteByIdFromDB = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
   const getid = parseInt(id, 10);
@@ -60,6 +71,7 @@ const deleteByIdFromDB = catchAsync(async (req: Request, res: Response) => {
 export const OrderController = {
   insertIntoDB,
   getAllFromDB,
+  updateOneInDB,
   deleteByIdFromDB
  
 };
