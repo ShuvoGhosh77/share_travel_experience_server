@@ -14,6 +14,7 @@ const insertIntoDB = async (req:Request) => {
         req.body.GuideImage = uploadedImage.secure_url
     }
     const dataToCreate = { ...req.body };
+    console.log(req)
    
     const result = await prisma.guide.create({
         data: dataToCreate,

@@ -29,6 +29,31 @@
             "date": 1706009458017,
             "name": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\errors\\phu-2024-23-01-17-error.log",
             "hash": "177314413e3ebb3d846dca7440f2a481e9b56d57a66377eff64478be27930252"
+        },
+        {
+            "date": 1706011454894,
+            "name": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\errors\\phu-2024-23-01-18-error.log",
+            "hash": "6a1a39a6c1e16f6cf8818523847df8978b697f41a373308b1ca5cd84bd55d2e5"
+        },
+        {
+            "date": 1706076625360,
+            "name": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\errors\\phu-2024-24-01-12-error.log",
+            "hash": "56706424897926773bc6b83cfbe85ec7f67171e4f90f2dbee609b06b62e6c9bd"
+        },
+        {
+            "date": 1706081935398,
+            "name": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\errors\\phu-2024-24-01-13-error.log",
+            "hash": "a5e714350d5c421eef2f7427bdcc02066c2614a97c97f96db6fb2d6f5162b414"
+        },
+        {
+            "date": 1706168124116,
+            "name": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\errors\\phu-2024-25-01-13-error.log",
+            "hash": "180efd13456099279439f5e10f2469eea9db9534a865446de2ca04cafc2dde34"
+        },
+        {
+            "date": 1706178252467,
+            "name": "F:\\p\\Share Travel Experience\\share_travel_experience_auth_service\\logs\\winston\\errors\\phu-2024-25-01-16-error.log",
+            "hash": "89a99fc1c407ffc5fba359a002671306e7cde815a2a4c4e12ed54dfcf70a5ced"
         }
     ],
     "hashType": "sha256"

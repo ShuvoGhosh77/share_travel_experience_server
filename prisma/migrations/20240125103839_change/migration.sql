@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "guide" ALTER COLUMN "CoverageArea" SET NOT NULL,
+ALTER COLUMN "CoverageArea" SET DATA TYPE TEXT;

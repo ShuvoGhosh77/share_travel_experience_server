@@ -59,7 +59,7 @@ model Guide {
   Name         String
   GuideImage   String
   PricePerDay  Int
-  CoverageArea String
+  CoverageArea String[]
   Status       GuideStatus @default(Available)
   createdAt    DateTime    @default(now()) @map("created_at")
   updatedAt    DateTime    @updatedAt @map("updated_at")
