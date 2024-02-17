@@ -64,7 +64,7 @@ const getAllFromDB = async (
             }
     });
   
-    const total = await prisma.room.count();
+    const total = await prisma.customer.count();
   
     return {
         meta: {

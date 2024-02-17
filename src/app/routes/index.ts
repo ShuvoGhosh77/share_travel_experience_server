@@ -3,7 +3,6 @@ import { commentRoutes } from '../modules/comment/comment.routes';
 import { postRoutes } from '../modules/posts/post.route';
 import { userRoutes } from '../modules/user/user.route';
 import { authRoutes } from '../modules/auth/auth.route';
-import { galleryRoutes } from '../modules/gallery/gallery.routes';
 import { customerRoutes } from '../modules/customer/customer.route';
 import { ReservationRoutes } from '../modules/reservation/reservation.routes';
 import { guideRoutes } from '../modules/guide/guide.route';
@@ -32,10 +31,6 @@ const moduleRoutes = [
   {
     path: '/auth',
     route: authRoutes
-  },
-  {
-    path: '/gallery',
-    route: galleryRoutes
   },
   {
     path: "/customer",
