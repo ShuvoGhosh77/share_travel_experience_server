@@ -2,11 +2,11 @@ import httpStatus from "http-status";
 import ApiError from "../../../errors/ApiError";
 import prisma from "../../../shared/prisma";
 import { ILoginUser, ILoginUserResponse, IRefreshTokenResponse } from "./auth.interface";
-import bcrypt from 'bcrypt';
+
 import { jwtHelpers } from "../../../helpers/jwtHelpers";
-import { Secret } from "jsonwebtoken";
-import config from "../../../config";
-import { hashPassword } from "../../../shared/bcryptUtils";
+
+
+import { isPasswordMatched } from "../../../helpers/comparePassword";
 
 
 
@@ -17,15 +17,15 @@ const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
       Email
     },
   });
+
   if (!isUserExist) {
     throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
   }
 
-  const hashedPassword = await hashPassword(isUserExist.password);
-  const isPasswordValid = await bcrypt.compare(password, hashedPassword);
-
   if (
-    isUserExist.password && isPasswordValid) {
+    isUserExist.password &&
+    !(await isPasswordMatched(password, isUserExist.password))
+  ) {
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Password is incorrect');
   }
 
